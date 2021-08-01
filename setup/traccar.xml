@@ -18,9 +18,26 @@
 
     -->
 
-    <entry key='database.driver'>org.h2.Driver</entry>
-    <entry key='database.url'>jdbc:h2:./data/database</entry>
-    <entry key='database.user'>sa</entry>
-    <entry key='database.password'></entry>
+    <entry key='database.driver'>com.mysql.cj.jdbc.Driver</entry>
+    <entry key='database.url'>jdbc:mysql://158.69.0.128/traccar</entry>
+    <entry key='database.user'>usertraccar</entry>
+    <entry key='database.password'>Tr4cc4r.1982</entry>
+
+
+    <entry key='notificator.types'>web,mail,sms,telegram</entry>
+    <entry key='notificator.sms.manager.class'>org.traccar.sms.HttpSmsClient</entry>
+    <entry key='notificator.telegram.key'>782910050:AAHMj0VnPUx6tZlkDmimDfiYqijr3Az0QkE</entry>
+    <entry key='notificator.telegram.chatId'>65695042</entry>
+    <entry key='sms.enable'>true</entry>
+    <!-- <entry key='sms.http.url'>http://monitoreo.grupofmo.com:8082</entry> -->
+    <entry key='sms.http.url'>http://10.133.90.151:8082</entry> -->
+    <!-- <entry key='sms.http.authorization'>f-2Lh8b2QMGyhLUg6uGvva:APA91bGNLW2WHxhyBNMe3di3J0vK42pP3SZo5BlNQ7GuiPYATymzXwuqzRWyumDLhwv3sg7aOIfH5nl93YZN2D_60QQy-CBYzCaAGngDCsUQ6XDaXwdzMG-aDIUOAKsPJCNX1Arg95f5</entry>-->
+    <entry key='sms.http.authorization'>5bb9edaf</entry>
+    <entry key='sms.http.template'>
+    {
+        "to": "{phone}",
+        "message": "{message}"
+    }
+    </entry>
 
 </properties>
